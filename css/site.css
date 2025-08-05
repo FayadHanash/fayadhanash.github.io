@@ -116,20 +116,20 @@ html, body {
     background-color: var(--color-light-bg);
     border-bottom: 1px solid var(--color-border);
 
-    padding-block: 1.2rem;
+    padding-block: 0.9rem;
 }
 
 .topnav ul {
     display: flex;
     justify-content: center;
-    gap: var(--spacing);
+    gap: 0.7rem;
     list-style: none;
 }
 
 
 .topnav a {
     display: block;
-    padding: 1rem 1.5rem;
+    padding: 1rem 1rem;
     color: var(--color-primary);
     text-decoration: none;
     font-weight: bold;

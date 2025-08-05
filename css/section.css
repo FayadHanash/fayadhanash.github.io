@@ -60,7 +60,19 @@
   
 
 }
-
+@media(max-width:768px){
+    .section-li-header1{
+        flex-wrap: wrap;
+    }
+    .section-li-title{
+    white-space: normal;
+    overflow-wrap: break-word;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+    flex: 1 1 auto;
+    min-width: 0;
+    }
+}
 .section-li:hover .section-li-title{
     color: var(--color-white);
 }
