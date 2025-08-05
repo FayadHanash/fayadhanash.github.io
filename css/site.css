@@ -1,0 +1,155 @@
+
+:root{
+    
+    --color-primary: #1a5685;
+    --color-secondary: #81a5ad;
+    --color-light-bg: #f8f9fa;
+    --color-border: #dddddd;
+    --color-white: #ffffff;
+    --color-black: #000000;
+
+    --font-base: 'Times New Roman', Times, serif;
+
+    --sidebar-width: 350px;
+    --avatar-size: 150px;
+    --spacing: 1rem;
+    --radius: 8px;
+
+    --shadow-light:  0 2px 8px rgba(26,95,133,0.15);
+    --shadow-strong: 0 4px 12px rgba(26,95,133,0.25);
+    
+    --transition-fast: 0.2s;
+    --transition-slow: 0.3s;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    font-family: var(--font-base);
+}
+
+.container {
+    display: flex;
+    min-height: 100%;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+}
+.sidebar,
+.content {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
+.sidebar {
+    flex: 0 0 var(--sidebar-width);
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    align-items: center;
+    text-align: left;
+    padding: 2rem 1rem;
+
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        flex:none;
+        width: 100%;
+    }
+}
+
+.content {
+    flex: 1;
+    background-color: var(--color-white);
+    color: var(--color-black);
+}
+
+.sidebar img {
+    width: var(--avatar-size);
+    height: var(--avatar-size);
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid var(--color-white);
+    margin-bottom: 2.5rem;
+}
+.sidebar h1 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+
+.addressCustom{
+    text-align: center;
+    text-align-last: center; 
+    -moz-text-align-last: center;
+    -ms-text-align-last: center;
+}
+
+.contact-list{
+    list-style: none;
+    margin:  1.5rem 0 0;
+    padding: 0;
+}
+
+.contact-list li {
+    line-height: 1.4;
+    text-align: left;
+    
+}
+
+
+
+
+.topnav {
+    background-color: var(--color-light-bg);
+    border-bottom: 1px solid var(--color-border);
+
+    padding-block: 1.2rem;
+}
+
+.topnav ul {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing);
+    list-style: none;
+}
+
+
+.topnav a {
+    display: block;
+    padding: 1rem 1.5rem;
+    color: var(--color-primary);
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: var(--radius);
+    
+}
+
+.topnav a:hover,
+.topnav a.active {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+footer {
+    background: var(--color-light-bg);
+    border-top: 1px solid var(--color-border);
+    text-align: center;
+    padding: 1rem;
+    
+  
+}
+
+
